@@ -5,4 +5,10 @@
 //  Created by Илья on 12.07.2021.
 //
 
-import Foundation
+import Vapor
+
+struct LoginResponse: Content {
+    let result: Int
+    let user: User
+    var errorMessage: String?
+}
